@@ -1,0 +1,14 @@
+.goal-item {
+  margin: 1rem 0;
+  background: #2BDDC2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+  font-size: 1.5rem;
+}
+
+.goal-item:hover{
+  transform: scale(1.05);
+}
