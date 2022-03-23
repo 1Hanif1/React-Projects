@@ -1,0 +1,51 @@
+.overlay{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(96, 215, 255,0.5);
+}
+
+.messageBox{
+    width: 50%;
+    background-color: white;
+    animation: slideDown 500ms ease-in-out;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.messageBox h1{
+    font-size: 2rem;
+    background-color: rgb(96, 215, 255);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+.messageBox p{
+   font-size: 1.8rem;
+   padding: 2rem;
+}
+.messageBox div{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0rem 2rem 2rem 0rem;
+}
+.overlay.hidden {
+    display: none;
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(-20%);
+        opacity: 0;
+    }to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
+

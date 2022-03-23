@@ -1,0 +1,46 @@
+.container{
+    width: 50%;
+    border-radius: 6px;
+    margin: 0 auto;
+    border: 2px solid rgb(96, 215, 255);
+    padding: 1.5rem 2.5rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        width: 90%;
+    }
+    
+}
+
+.container > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: rgb(96, 215, 255);
+    font-weight: 600;
+}
+
+.container input {
+    width: 100%;
+    height: max(2.5vw, 2rem);
+    border: 2px solid #ccc;
+    font-size: 1.4rem;
+}
+
+.container input:focus{
+    outline: none;
+    border: 2px solid rgb(96, 215, 255);
+}
+
+.container input:focus{
+    color: rgb(96, 215, 255);
+}
+
