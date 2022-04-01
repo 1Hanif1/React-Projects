@@ -24,6 +24,7 @@ const UserForm = function (props) {
                 "age": age,
             }
         )
+        document.querySelector('.form--username').value = document.querySelector('.form--age').value = ''
     }
     return (
         <div className={styles.container}>

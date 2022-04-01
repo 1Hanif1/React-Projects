@@ -1,5 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
+import ReactDOM from 'react-dom';
 import UserForm from './components/UserForm/UserForm';
 import UserList from './components/UserList/UserList';
 import Modal from './components/UI/Modal';
@@ -28,11 +29,11 @@ function App() {
     setError(errMsg);
   }
   return (
-    <div>
-      <Modal err={error} onClick={modalOnClickHandler} />
+    <Fragment>
+      {ReactDOM.createPortal(<Modal err={error} onClick={modalOnClickHandler} />, document.querySelector("#modal-root"))}
       <UserForm errHandler={errorHandler} onNewUser={newUserHandler} />
       <UserList users={USERS} />
-    </div>
+    </Fragment>
   );
 }
 
